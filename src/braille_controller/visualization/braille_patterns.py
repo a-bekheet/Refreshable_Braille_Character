@@ -24,7 +24,21 @@ BRAILLE_SPECIAL = {
     '.': "010011",  # period
     ',': "010000",  # comma
     '?': "011001",  # question mark
-    '!': "011010"   # exclamation mark
+    '!': "011010",  # exclamation mark
+    '\'': "001000", # apostrophe
+    '-': "001001",  # hyphen
+    ':': "010010",  # colon
+    ';': "011000",  # semicolon
+    '(': "011011",  # open parenthesis
+    ')': "011011",  # close parenthesis
+    '/': "001100",  # slash
+    '@': "011101",  # at symbol
+    '#': "111111",  # number sign
+    '*': "001010",  # asterisk
+    '+': "001011",  # plus
+    '=': "001111",  # equals
+    '_': "001101",  # underscore
+    '"': "001010"   # quotation mark
 }
 
 # Pattern to angle mapping (matches Arduino PATTERN_TO_ANGLE array)

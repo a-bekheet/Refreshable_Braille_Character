@@ -94,7 +94,8 @@ class SerialManager:
         if not self.is_connected:
             raise ConnectionError("Not connected to device")
 
-        if not text.strip():
+        # Check if text is None or empty string after strip
+        if text is None or text.strip() == "" and text != " ":
             raise ValueError("Empty text")
 
         try:
