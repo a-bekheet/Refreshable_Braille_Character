@@ -1,0 +1,38 @@
+2024-12-04 02:10:46,090 [INFO] Logging initialized
+2024-12-04 02:10:46,090 [INFO] Starting Braille Controller Application
+2024-12-04 02:10:46,249 [DEBUG] Configuration loaded from file
+2024-12-04 02:10:46,249 [DEBUG] Configuration initialized
+2024-12-04 02:10:46,255 [DEBUG] Redrawing servo at angle: 0°
+2024-12-04 02:10:46,257 [DEBUG] Redrawing servo at angle: 0°
+2024-12-04 02:10:46,258 [INFO] Available serial ports: ['/dev/cu.debug-console', '/dev/cu.Bluetooth-Incoming-Port', '/dev/cu.AlisJBLPARTYBOXON-THE-GO', '/dev/cu.usbmodem21101']
+2024-12-04 02:10:46,258 [DEBUG] BrailleControllerGUI initialized
+2024-12-04 02:10:46,258 [INFO] GUI initialized successfully
+2024-12-04 02:10:46,258 [INFO] Application started - Log file: logs/braille_controller_20241204_021046.log
+2024-12-04 02:11:02,055 [ERROR] Send error: Not connected to device
+2024-12-04 02:11:07,922 [INFO] Connected to /dev/cu.usbmodem21101
+2024-12-04 02:11:07,924 [DEBUG] Received: Braille Servo Controller Ready
+2024-12-04 02:11:07,927 [DEBUG] Received message: Braille Servo Controller Ready
+2024-12-04 02:11:08,034 [INFO] Serial connection closed
+2024-12-04 02:11:10,417 [ERROR] Send error: Not connected to device
+2024-12-04 02:11:15,518 [INFO] Connected to /dev/cu.usbmodem21101
+2024-12-04 02:11:15,521 [DEBUG] Received: Braille Servo Controller Ready
+2024-12-04 02:11:15,522 [DEBUG] Received message: Braille Servo Controller Ready
+2024-12-04 02:11:15,627 [DEBUG] Received: Enter text to convert to Braille
+2024-12-04 02:11:15,627 [DEBUG] Received message: Enter text to convert to Braille
+2024-12-04 02:11:18,161 [DEBUG] Text command sent: TEXT:avav
+2024-12-04 02:11:18,240 [DEBUG] Received: Processing: avav
+2024-12-04 02:11:18,240 [DEBUG] Received message: Processing: avav
+2024-12-04 02:11:18,342 [DEBUG] Received: Character: a -> Pattern: 100000 Servo A (100): 1613µs, Servo B (0): 844µs
+2024-12-04 02:11:18,342 [DEBUG] Received message: Character: a -> Pattern: 100000 Servo A (100): 1613µs, Servo B (0): 844µs
+2024-12-04 02:11:18,360 [DEBUG] Pattern updated: 100000
+2024-12-04 02:11:19,788 [DEBUG] Received: Character: v -> Pattern: 101011 Servo A (101): 1920µs, Servo B (11): 1324µs
+2024-12-04 02:11:19,788 [DEBUG] Received message: Character: v -> Pattern: 101011 Servo A (101): 1920µs, Servo B (11): 1324µs
+2024-12-04 02:11:19,790 [DEBUG] Pattern updated: 101011
+2024-12-04 02:11:21,299 [DEBUG] Received: Character: a -> Pattern: 100000 Servo A (100): 1613µs, Servo B (0): 844µs
+2024-12-04 02:11:21,300 [DEBUG] Received message: Character: a -> Pattern: 100000 Servo A (100): 1613µs, Servo B (0): 844µs
+2024-12-04 02:11:21,319 [DEBUG] Pattern updated: 100000
+2024-12-04 02:11:22,811 [DEBUG] Received: Character: v -> Pattern: 101011 Servo A (101): 1920µs, Servo B (11): 1324µs
+2024-12-04 02:11:22,812 [DEBUG] Received message: Character: v -> Pattern: 101011 Servo A (101): 1920µs, Servo B (11): 1324µs
+2024-12-04 02:11:22,814 [DEBUG] Pattern updated: 101011
+2024-12-04 02:13:56,248 [INFO] Serial connection closed
+2024-12-04 02:13:56,262 [INFO] Application shutdown complete

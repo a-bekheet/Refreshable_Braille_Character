@@ -1,0 +1,7 @@
+{
+    "char_delay": 3000,
+    "servo_delay": 750,
+    "dual_servo_mode": true,
+    "debug_mode": false,
+    "theme": "default"
+}

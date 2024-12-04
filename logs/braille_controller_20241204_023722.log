@@ -1,0 +1,97 @@
+2024-12-04 02:37:22,973 [INFO] Logging initialized
+2024-12-04 02:37:22,973 [INFO] Starting Braille Controller Application
+2024-12-04 02:37:23,140 [DEBUG] Configuration loaded from file
+2024-12-04 02:37:23,140 [DEBUG] Configuration initialized
+2024-12-04 02:37:23,147 [INFO] Available serial ports: ['/dev/cu.debug-console', '/dev/cu.Bluetooth-Incoming-Port', '/dev/cu.AlisJBLPARTYBOXON-THE-GO', '/dev/cu.usbmodem21101']
+2024-12-04 02:37:23,147 [DEBUG] BrailleControllerGUI initialized
+2024-12-04 02:37:23,147 [INFO] GUI initialized successfully
+2024-12-04 02:37:23,148 [INFO] Application started - Log file: logs/braille_controller_20241204_023722.log
+2024-12-04 02:37:37,148 [INFO] Connected to /dev/cu.usbmodem21101
+2024-12-04 02:37:37,150 [DEBUG] Received: Braille Servo Controller Ready
+2024-12-04 02:37:37,150 [DEBUG] Received message: Braille Servo Controller Ready
+2024-12-04 02:37:37,256 [DEBUG] Received: Enter text to convert to Braille
+2024-12-04 02:37:37,256 [DEBUG] Received message: Enter text to convert to Braille
+2024-12-04 02:37:47,203 [DEBUG] Text command sent: TEXT:bekheetv
+2024-12-04 02:37:47,241 [DEBUG] Received: Processing: bekheetv
+2024-12-04 02:37:47,241 [DEBUG] Received message: Processing: bekheetv
+2024-12-04 02:37:47,347 [DEBUG] Received: Character: b -> Pattern: 101000 Servo A (101): 1920µs, Servo B (0): 844µs
+2024-12-04 02:37:47,347 [DEBUG] Received message: Character: b -> Pattern: 101000 Servo A (101): 1920µs, Servo B (0): 844µs
+2024-12-04 02:37:47,363 [DEBUG] Pattern updated: 101000
+2024-12-04 02:37:47,363 [DEBUG] Found servo matches: [('A', '1920'), ('B', '844')]
+2024-12-04 02:37:47,363 [DEBUG] Servo A pulse: 1920µs
+2024-12-04 02:37:47,364 [DEBUG] Servo B pulse: 844µs
+2024-12-04 02:37:47,364 [DEBUG] Pulse width (bounded): 1920µs
+2024-12-04 02:37:47,364 [DEBUG] Converted 1920µs to 127.8°
+2024-12-04 02:37:47,364 [DEBUG] Pulse width (bounded): 844µs
+2024-12-04 02:37:47,364 [DEBUG] Converted 844µs to 31.0°
+2024-12-04 02:37:48,842 [DEBUG] Received: Character: e -> Pattern: 100100 Servo A (100): 1613µs, Servo B (100): 1613µs
+2024-12-04 02:37:48,843 [DEBUG] Received message: Character: e -> Pattern: 100100 Servo A (100): 1613µs, Servo B (100): 1613µs
+2024-12-04 02:37:48,845 [DEBUG] Pattern updated: 100100
+2024-12-04 02:37:48,845 [DEBUG] Found servo matches: [('A', '1613'), ('B', '1613')]
+2024-12-04 02:37:48,845 [DEBUG] Servo A pulse: 1613µs
+2024-12-04 02:37:48,845 [DEBUG] Servo B pulse: 1613µs
+2024-12-04 02:37:48,845 [DEBUG] Pulse width (bounded): 1613µs
+2024-12-04 02:37:48,845 [DEBUG] Converted 1613µs to 100.2°
+2024-12-04 02:37:48,845 [DEBUG] Pulse width (bounded): 1613µs
+2024-12-04 02:37:48,846 [DEBUG] Converted 1613µs to 100.2°
+2024-12-04 02:37:50,350 [DEBUG] Received: Character: k -> Pattern: 100010 Servo A (100): 1613µs, Servo B (10): 1268µs
+2024-12-04 02:37:50,351 [DEBUG] Received message: Character: k -> Pattern: 100010 Servo A (100): 1613µs, Servo B (10): 1268µs
+2024-12-04 02:37:50,369 [DEBUG] Pattern updated: 100010
+2024-12-04 02:37:50,370 [DEBUG] Found servo matches: [('A', '1613'), ('B', '1268')]
+2024-12-04 02:37:50,370 [DEBUG] Servo A pulse: 1613µs
+2024-12-04 02:37:50,370 [DEBUG] Servo B pulse: 1268µs
+2024-12-04 02:37:50,370 [DEBUG] Pulse width (bounded): 1613µs
+2024-12-04 02:37:50,370 [DEBUG] Converted 1613µs to 100.2°
+2024-12-04 02:37:50,370 [DEBUG] Pulse width (bounded): 1268µs
+2024-12-04 02:37:50,370 [DEBUG] Converted 1268µs to 69.1°
+2024-12-04 02:37:51,865 [DEBUG] Received: Character: h -> Pattern: 101100 Servo A (101): 1920µs, Servo B (100): 1613µs
+2024-12-04 02:37:51,866 [DEBUG] Received message: Character: h -> Pattern: 101100 Servo A (101): 1920µs, Servo B (100): 1613µs
+2024-12-04 02:37:51,868 [DEBUG] Pattern updated: 101100
+2024-12-04 02:37:51,869 [DEBUG] Found servo matches: [('A', '1920'), ('B', '1613')]
+2024-12-04 02:37:51,869 [DEBUG] Servo A pulse: 1920µs
+2024-12-04 02:37:51,869 [DEBUG] Servo B pulse: 1613µs
+2024-12-04 02:37:51,869 [DEBUG] Pulse width (bounded): 1920µs
+2024-12-04 02:37:51,869 [DEBUG] Converted 1920µs to 127.8°
+2024-12-04 02:37:51,869 [DEBUG] Pulse width (bounded): 1613µs
+2024-12-04 02:37:51,869 [DEBUG] Converted 1613µs to 100.2°
+2024-12-04 02:37:53,380 [DEBUG] Received: Character: e -> Pattern: 100100 Servo A (100): 1613µs, Servo B (100): 1613µs
+2024-12-04 02:37:53,380 [DEBUG] Received message: Character: e -> Pattern: 100100 Servo A (100): 1613µs, Servo B (100): 1613µs
+2024-12-04 02:37:53,381 [DEBUG] Pattern updated: 100100
+2024-12-04 02:37:53,382 [DEBUG] Found servo matches: [('A', '1613'), ('B', '1613')]
+2024-12-04 02:37:53,382 [DEBUG] Servo A pulse: 1613µs
+2024-12-04 02:37:53,382 [DEBUG] Servo B pulse: 1613µs
+2024-12-04 02:37:53,382 [DEBUG] Pulse width (bounded): 1613µs
+2024-12-04 02:37:53,382 [DEBUG] Converted 1613µs to 100.2°
+2024-12-04 02:37:53,382 [DEBUG] Pulse width (bounded): 1613µs
+2024-12-04 02:37:53,382 [DEBUG] Converted 1613µs to 100.2°
+2024-12-04 02:37:54,896 [DEBUG] Received: Character: e -> Pattern: 100100 Servo A (100): 1613µs, Servo B (100): 1613µs
+2024-12-04 02:37:54,896 [DEBUG] Received message: Character: e -> Pattern: 100100 Servo A (100): 1613µs, Servo B (100): 1613µs
+2024-12-04 02:37:54,899 [DEBUG] Pattern updated: 100100
+2024-12-04 02:37:54,899 [DEBUG] Found servo matches: [('A', '1613'), ('B', '1613')]
+2024-12-04 02:37:54,900 [DEBUG] Servo A pulse: 1613µs
+2024-12-04 02:37:54,900 [DEBUG] Servo B pulse: 1613µs
+2024-12-04 02:37:54,900 [DEBUG] Pulse width (bounded): 1613µs
+2024-12-04 02:37:54,900 [DEBUG] Converted 1613µs to 100.2°
+2024-12-04 02:37:54,900 [DEBUG] Pulse width (bounded): 1613µs
+2024-12-04 02:37:54,900 [DEBUG] Converted 1613µs to 100.2°
+2024-12-04 02:37:56,407 [DEBUG] Received: Character: t -> Pattern: 11110 Servo A (11): 1324µs, Servo B (110): 2037µs
+2024-12-04 02:37:56,408 [DEBUG] Received message: Character: t -> Pattern: 11110 Servo A (11): 1324µs, Servo B (110): 2037µs
+2024-12-04 02:37:56,410 [DEBUG] Found servo matches: [('A', '1324'), ('B', '2037')]
+2024-12-04 02:37:56,410 [DEBUG] Servo A pulse: 1324µs
+2024-12-04 02:37:56,410 [DEBUG] Servo B pulse: 2037µs
+2024-12-04 02:37:56,411 [DEBUG] Pulse width (bounded): 1324µs
+2024-12-04 02:37:56,411 [DEBUG] Converted 1324µs to 74.2°
+2024-12-04 02:37:56,411 [DEBUG] Pulse width (bounded): 2037µs
+2024-12-04 02:37:56,411 [DEBUG] Converted 2037µs to 138.3°
+2024-12-04 02:37:57,923 [DEBUG] Received: Character: v -> Pattern: 101011 Servo A (101): 1920µs, Servo B (11): 1324µs
+2024-12-04 02:37:57,923 [DEBUG] Received message: Character: v -> Pattern: 101011 Servo A (101): 1920µs, Servo B (11): 1324µs
+2024-12-04 02:37:57,926 [DEBUG] Pattern updated: 101011
+2024-12-04 02:37:57,926 [DEBUG] Found servo matches: [('A', '1920'), ('B', '1324')]
+2024-12-04 02:37:57,926 [DEBUG] Servo A pulse: 1920µs
+2024-12-04 02:37:57,926 [DEBUG] Servo B pulse: 1324µs
+2024-12-04 02:37:57,927 [DEBUG] Pulse width (bounded): 1920µs
+2024-12-04 02:37:57,927 [DEBUG] Converted 1920µs to 127.8°
+2024-12-04 02:37:57,927 [DEBUG] Pulse width (bounded): 1324µs
+2024-12-04 02:37:57,927 [DEBUG] Converted 1324µs to 74.2°
+2024-12-04 02:41:39,895 [INFO] Serial connection closed
+2024-12-04 02:41:39,901 [INFO] Application shutdown complete

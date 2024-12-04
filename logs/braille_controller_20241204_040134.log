@@ -1,0 +1,110 @@
+2024-12-04 04:01:34,808 [INFO] Logging initialized
+2024-12-04 04:01:34,808 [INFO] Starting Braille Controller Application
+2024-12-04 04:01:34,977 [DEBUG] Configuration loaded from file
+2024-12-04 04:01:34,977 [DEBUG] Configuration initialized
+2024-12-04 04:01:34,984 [INFO] Available serial ports: ['/dev/cu.debug-console', '/dev/cu.Bluetooth-Incoming-Port', '/dev/cu.AlisJBLPARTYBOXON-THE-GO', '/dev/cu.usbmodem21101']
+2024-12-04 04:01:34,984 [DEBUG] BrailleControllerGUI initialized
+2024-12-04 04:01:34,984 [INFO] GUI initialized successfully
+2024-12-04 04:01:34,984 [INFO] Application started - Log file: logs/braille_controller_20241204_040134.log
+2024-12-04 04:01:40,414 [INFO] Connected to /dev/cu.usbmodem21101
+2024-12-04 04:01:40,418 [DEBUG] Received: Braille Servo Controller Ready
+2024-12-04 04:01:40,418 [DEBUG] Received message: Braille Servo Controller Ready
+2024-12-04 04:01:40,524 [DEBUG] Received: Enter text to convert to Braille
+2024-12-04 04:01:40,524 [DEBUG] Received message: Enter text to convert to Braille
+2024-12-04 04:01:50,941 [DEBUG] Text command sent: TEXT:123
+2024-12-04 04:01:50,943 [DEBUG] Pattern updated: 000000
+2024-12-04 04:01:50,943 [DEBUG] Pattern updated: 000000
+2024-12-04 04:01:50,943 [DEBUG] Pattern updated: 000000
+2024-12-04 04:01:51,046 [DEBUG] Received: Processing: 123
+2024-12-04 04:01:51,047 [DEBUG] Received message: Processing: 123
+2024-12-04 04:01:51,152 [DEBUG] Received: Character: 1 -> Pattern: 100000 Servo A (100): 1613µs, Servo B (0): 844µs
+2024-12-04 04:01:51,152 [DEBUG] Received message: Character: 1 -> Pattern: 100000 Servo A (100): 1613µs, Servo B (0): 844µs
+2024-12-04 04:01:51,154 [DEBUG] Pattern updated: 100000
+2024-12-04 04:01:51,155 [DEBUG] Pulse width (bounded): 1613µs
+2024-12-04 04:01:51,155 [DEBUG] Converted 1613µs to 100.2°
+2024-12-04 04:01:51,155 [DEBUG] Pulse width (bounded): 844µs
+2024-12-04 04:01:51,155 [DEBUG] Converted 844µs to 31.0°
+2024-12-04 04:01:51,157 [DEBUG] Processing group 0: 123
+2024-12-04 04:01:51,157 [DEBUG] Current char: 1 at position 0
+2024-12-04 04:01:52,564 [DEBUG] Received: Character: 2 -> Pattern: 101000 Servo A (101): 1920µs, Servo B (0): 844µs
+2024-12-04 04:01:52,564 [DEBUG] Received message: Character: 2 -> Pattern: 101000 Servo A (101): 1920µs, Servo B (0): 844µs
+2024-12-04 04:01:52,565 [DEBUG] Pattern updated: 101000
+2024-12-04 04:01:52,565 [DEBUG] Pulse width (bounded): 1920µs
+2024-12-04 04:01:52,565 [DEBUG] Converted 1920µs to 127.8°
+2024-12-04 04:01:52,565 [DEBUG] Pulse width (bounded): 844µs
+2024-12-04 04:01:52,565 [DEBUG] Converted 844µs to 31.0°
+2024-12-04 04:01:52,585 [DEBUG] Processing group 0: 123
+2024-12-04 04:01:52,585 [DEBUG] Current char: 2 at position 1
+2024-12-04 04:01:54,075 [DEBUG] Received: Character: 3 -> Pattern: 110000 Servo A (110): 2037µs, Servo B (0): 844µs
+2024-12-04 04:01:54,075 [DEBUG] Received message: Character: 3 -> Pattern: 110000 Servo A (110): 2037µs, Servo B (0): 844µs
+2024-12-04 04:01:54,075 [DEBUG] Pattern updated: 110000
+2024-12-04 04:01:54,076 [DEBUG] Pulse width (bounded): 2037µs
+2024-12-04 04:01:54,076 [DEBUG] Converted 2037µs to 138.3°
+2024-12-04 04:01:54,076 [DEBUG] Pulse width (bounded): 844µs
+2024-12-04 04:01:54,076 [DEBUG] Converted 844µs to 31.0°
+2024-12-04 04:01:54,087 [DEBUG] Processing group 0: 123
+2024-12-04 04:01:54,088 [DEBUG] Current char: 3 at position 2
+2024-12-04 04:01:54,088 [DEBUG] Moving to group index 1
+2024-12-04 04:01:54,119 [DEBUG] Queued next group: 456
+2024-12-04 04:01:57,120 [DEBUG] Text command sent: TEXT:456
+2024-12-04 04:01:57,227 [DEBUG] Received: Processing: 456
+2024-12-04 04:01:57,228 [DEBUG] Received message: Processing: 456
+2024-12-04 04:01:57,335 [DEBUG] Received: Character: 4 -> Pattern: 110100 Servo A (110): 2037µs, Servo B (100): 1613µs
+2024-12-04 04:01:57,336 [DEBUG] Received message: Character: 4 -> Pattern: 110100 Servo A (110): 2037µs, Servo B (100): 1613µs
+2024-12-04 04:01:57,351 [DEBUG] Pattern updated: 110100
+2024-12-04 04:01:57,352 [DEBUG] Pulse width (bounded): 2037µs
+2024-12-04 04:01:57,352 [DEBUG] Converted 2037µs to 138.3°
+2024-12-04 04:01:57,352 [DEBUG] Pulse width (bounded): 1613µs
+2024-12-04 04:01:57,352 [DEBUG] Converted 1613µs to 100.2°
+2024-12-04 04:01:57,368 [DEBUG] Processing group 1: 456
+2024-12-04 04:01:57,368 [DEBUG] Current char: 4 at position 0
+2024-12-04 04:01:58,748 [DEBUG] Received: Character: 5 -> Pattern: 100100 Servo A (100): 1613µs, Servo B (100): 1613µs
+2024-12-04 04:01:58,749 [DEBUG] Received message: Character: 5 -> Pattern: 100100 Servo A (100): 1613µs, Servo B (100): 1613µs
+2024-12-04 04:01:58,751 [DEBUG] Pattern updated: 100100
+2024-12-04 04:01:58,752 [DEBUG] Pulse width (bounded): 1613µs
+2024-12-04 04:01:58,752 [DEBUG] Converted 1613µs to 100.2°
+2024-12-04 04:01:58,752 [DEBUG] Pulse width (bounded): 1613µs
+2024-12-04 04:01:58,752 [DEBUG] Converted 1613µs to 100.2°
+2024-12-04 04:01:58,776 [DEBUG] Processing group 1: 456
+2024-12-04 04:01:58,777 [DEBUG] Current char: 5 at position 1
+2024-12-04 04:02:00,260 [DEBUG] Received: Character: 6 -> Pattern: 111000 Servo A (111): 2094µs, Servo B (0): 844µs
+2024-12-04 04:02:00,260 [DEBUG] Received message: Character: 6 -> Pattern: 111000 Servo A (111): 2094µs, Servo B (0): 844µs
+2024-12-04 04:02:00,277 [DEBUG] Pattern updated: 111000
+2024-12-04 04:02:00,277 [DEBUG] Pulse width (bounded): 2094µs
+2024-12-04 04:02:00,277 [DEBUG] Converted 2094µs to 143.5°
+2024-12-04 04:02:00,278 [DEBUG] Pulse width (bounded): 844µs
+2024-12-04 04:02:00,278 [DEBUG] Converted 844µs to 31.0°
+2024-12-04 04:02:00,291 [DEBUG] Processing group 1: 456
+2024-12-04 04:02:00,292 [DEBUG] Current char: 6 at position 2
+2024-12-04 04:02:00,292 [DEBUG] Moving to group index 2
+2024-12-04 04:02:00,292 [DEBUG] Queued next group: 789
+2024-12-04 04:02:03,294 [DEBUG] Text command sent: TEXT:789
+2024-12-04 04:02:03,411 [DEBUG] Received: Processing: 789
+2024-12-04 04:02:03,411 [DEBUG] Received message: Processing: 789
+2024-12-04 04:02:03,516 [DEBUG] Received: Character: 7 -> Pattern: 111100 Servo A (111): 2094µs, Servo B (100): 1613µs
+2024-12-04 04:02:03,517 [DEBUG] Received message: Character: 7 -> Pattern: 111100 Servo A (111): 2094µs, Servo B (100): 1613µs
+2024-12-04 04:02:03,544 [DEBUG] Pattern updated: 111100
+2024-12-04 04:02:03,544 [DEBUG] Pulse width (bounded): 2094µs
+2024-12-04 04:02:03,544 [DEBUG] Converted 2094µs to 143.5°
+2024-12-04 04:02:03,544 [DEBUG] Pulse width (bounded): 1613µs
+2024-12-04 04:02:03,544 [DEBUG] Converted 1613µs to 100.2°
+2024-12-04 04:02:03,554 [DEBUG] Processing group 2: 789
+2024-12-04 04:02:03,554 [DEBUG] Current char: 7 at position 0
+2024-12-04 04:02:04,921 [DEBUG] Received: Character: 8 -> Pattern: 101100 Servo A (101): 1920µs, Servo B (100): 1613µs
+2024-12-04 04:02:04,921 [DEBUG] Received message: Character: 8 -> Pattern: 101100 Servo A (101): 1920µs, Servo B (100): 1613µs
+2024-12-04 04:02:04,937 [DEBUG] Pattern updated: 101100
+2024-12-04 04:02:04,938 [DEBUG] Pulse width (bounded): 1920µs
+2024-12-04 04:02:04,938 [DEBUG] Converted 1920µs to 127.8°
+2024-12-04 04:02:04,938 [DEBUG] Pulse width (bounded): 1613µs
+2024-12-04 04:02:04,938 [DEBUG] Converted 1613µs to 100.2°
+2024-12-04 04:02:04,952 [DEBUG] Processing group 2: 789
+2024-12-04 04:02:04,953 [DEBUG] Current char: 8 at position 1
+2024-12-04 04:02:06,432 [DEBUG] Received: Character: 9 -> Pattern: 11000 Servo A (11): 1324µs, Servo B (0): 844µs
+2024-12-04 04:02:06,433 [DEBUG] Received message: Character: 9 -> Pattern: 11000 Servo A (11): 1324µs, Servo B (0): 844µs
+2024-12-04 04:02:06,434 [DEBUG] Pulse width (bounded): 1324µs
+2024-12-04 04:02:06,434 [DEBUG] Converted 1324µs to 74.2°
+2024-12-04 04:02:06,434 [DEBUG] Pulse width (bounded): 844µs
+2024-12-04 04:02:06,434 [DEBUG] Converted 844µs to 31.0°
+2024-12-04 04:02:06,472 [DEBUG] Processing group 2: 789
+2024-12-04 04:02:06,473 [DEBUG] Current char: 9 at position 2
+2024-12-04 04:02:06,473 [DEBUG] Moving to group index 3

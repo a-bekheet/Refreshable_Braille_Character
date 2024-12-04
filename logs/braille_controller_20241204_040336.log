@@ -1,0 +1,67 @@
+2024-12-04 04:03:36,711 [INFO] Logging initialized
+2024-12-04 04:03:36,711 [INFO] Starting Braille Controller Application
+2024-12-04 04:03:36,862 [DEBUG] Configuration loaded from file
+2024-12-04 04:03:36,862 [DEBUG] Configuration initialized
+2024-12-04 04:03:36,869 [INFO] Available serial ports: ['/dev/cu.debug-console', '/dev/cu.Bluetooth-Incoming-Port', '/dev/cu.AlisJBLPARTYBOXON-THE-GO', '/dev/cu.usbmodem21101']
+2024-12-04 04:03:36,869 [DEBUG] BrailleControllerGUI initialized
+2024-12-04 04:03:36,869 [INFO] GUI initialized successfully
+2024-12-04 04:03:36,869 [INFO] Application started - Log file: logs/braille_controller_20241204_040336.log
+2024-12-04 04:03:41,994 [INFO] Connected to /dev/cu.usbmodem21101
+2024-12-04 04:03:41,995 [DEBUG] Received: Braille Servo Controller Ready
+2024-12-04 04:03:41,995 [DEBUG] Received message: Braille Servo Controller Ready
+2024-12-04 04:03:42,098 [DEBUG] Received: Enter text to convert to Braille
+2024-12-04 04:03:42,098 [DEBUG] Received message: Enter text to convert to Braille
+2024-12-04 04:03:50,612 [DEBUG] Text command sent: TEXT:123
+2024-12-04 04:03:50,612 [DEBUG] Pattern updated: 000000
+2024-12-04 04:03:50,613 [DEBUG] Pattern updated: 000000
+2024-12-04 04:03:50,613 [DEBUG] Pattern updated: 000000
+2024-12-04 04:03:50,644 [DEBUG] Received: Processing: 123
+2024-12-04 04:03:50,644 [DEBUG] Received message: Processing: 123
+2024-12-04 04:03:50,747 [DEBUG] Received: Character: 1 -> Pattern: 100000 Servo A (100): 1613µs, Servo B (0): 844µs
+2024-12-04 04:03:50,748 [DEBUG] Received message: Character: 1 -> Pattern: 100000 Servo A (100): 1613µs, Servo B (0): 844µs
+2024-12-04 04:03:50,748 [DEBUG] Current group: 123, Current char: 1
+2024-12-04 04:03:50,748 [DEBUG] Found char 1 at position 0
+2024-12-04 04:03:50,748 [DEBUG] Updating display 0 with char 1 and pattern 100000
+2024-12-04 04:03:50,750 [DEBUG] Pattern updated: 100000
+2024-12-04 04:03:50,750 [DEBUG] Pulse width (bounded): 1613µs
+2024-12-04 04:03:50,750 [DEBUG] Converted 1613µs to 100.2°
+2024-12-04 04:03:50,750 [DEBUG] Pulse width (bounded): 844µs
+2024-12-04 04:03:50,750 [DEBUG] Converted 844µs to 31.0°
+2024-12-04 04:03:50,752 [ERROR] Message processing error: 'BrailleControllerGUI' object has no attribute 'update_idletasks'
+Traceback (most recent call last):
+  File "/Users/bekheet/dev/Refreshable_Braille_Character/src/braille_controller/gui/controller_gui.py", line 351, in process_serial_message
+    self.update_idletasks()
+    ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'BrailleControllerGUI' object has no attribute 'update_idletasks'
+2024-12-04 04:03:52,234 [DEBUG] Received: Character: 2 -> Pattern: 101000 Servo A (101): 1920µs, Servo B (0): 844µs
+2024-12-04 04:03:52,235 [DEBUG] Received message: Character: 2 -> Pattern: 101000 Servo A (101): 1920µs, Servo B (0): 844µs
+2024-12-04 04:03:52,235 [DEBUG] Current group: 123, Current char: 2
+2024-12-04 04:03:52,236 [DEBUG] Found char 2 at position 1
+2024-12-04 04:03:52,236 [DEBUG] Updating display 1 with char 2 and pattern 101000
+2024-12-04 04:03:52,246 [DEBUG] Pattern updated: 101000
+2024-12-04 04:03:52,246 [DEBUG] Pulse width (bounded): 1920µs
+2024-12-04 04:03:52,246 [DEBUG] Converted 1920µs to 127.8°
+2024-12-04 04:03:52,246 [DEBUG] Pulse width (bounded): 844µs
+2024-12-04 04:03:52,246 [DEBUG] Converted 844µs to 31.0°
+2024-12-04 04:03:52,269 [ERROR] Message processing error: 'BrailleControllerGUI' object has no attribute 'update_idletasks'
+Traceback (most recent call last):
+  File "/Users/bekheet/dev/Refreshable_Braille_Character/src/braille_controller/gui/controller_gui.py", line 351, in process_serial_message
+    self.update_idletasks()
+    ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'BrailleControllerGUI' object has no attribute 'update_idletasks'
+2024-12-04 04:03:53,742 [DEBUG] Received: Character: 3 -> Pattern: 110000 Servo A (110): 2037µs, Servo B (0): 844µs
+2024-12-04 04:03:53,743 [DEBUG] Received message: Character: 3 -> Pattern: 110000 Servo A (110): 2037µs, Servo B (0): 844µs
+2024-12-04 04:03:53,743 [DEBUG] Current group: 123, Current char: 3
+2024-12-04 04:03:53,743 [DEBUG] Found char 3 at position 2
+2024-12-04 04:03:53,744 [DEBUG] Updating display 2 with char 3 and pattern 110000
+2024-12-04 04:03:53,745 [DEBUG] Pattern updated: 110000
+2024-12-04 04:03:53,745 [DEBUG] Pulse width (bounded): 2037µs
+2024-12-04 04:03:53,745 [DEBUG] Converted 2037µs to 138.3°
+2024-12-04 04:03:53,745 [DEBUG] Pulse width (bounded): 844µs
+2024-12-04 04:03:53,745 [DEBUG] Converted 844µs to 31.0°
+2024-12-04 04:03:53,765 [ERROR] Message processing error: 'BrailleControllerGUI' object has no attribute 'update_idletasks'
+Traceback (most recent call last):
+  File "/Users/bekheet/dev/Refreshable_Braille_Character/src/braille_controller/gui/controller_gui.py", line 351, in process_serial_message
+    self.update_idletasks()
+    ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'BrailleControllerGUI' object has no attribute 'update_idletasks'

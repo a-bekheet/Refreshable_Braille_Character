@@ -1,0 +1,183 @@
+2024-12-04 03:32:30,604 [INFO] Logging initialized
+2024-12-04 03:32:30,605 [INFO] Starting Braille Controller Application
+2024-12-04 03:32:30,734 [DEBUG] Configuration loaded from file
+2024-12-04 03:32:30,734 [DEBUG] Configuration initialized
+2024-12-04 03:32:30,742 [INFO] Available serial ports: ['/dev/cu.debug-console', '/dev/cu.Bluetooth-Incoming-Port', '/dev/cu.AlisJBLPARTYBOXON-THE-GO', '/dev/cu.usbmodem21101']
+2024-12-04 03:32:30,742 [DEBUG] BrailleControllerGUI initialized
+2024-12-04 03:32:30,742 [INFO] GUI initialized successfully
+2024-12-04 03:32:30,742 [INFO] Application started - Log file: logs/braille_controller_20241204_033230.log
+2024-12-04 03:33:03,758 [ERROR] Send error: Not connected to device
+2024-12-04 03:33:08,894 [INFO] Connected to /dev/cu.usbmodem21101
+2024-12-04 03:33:08,898 [DEBUG] Received: Braille Servo Controller Ready
+2024-12-04 03:33:08,898 [DEBUG] Received message: Braille Servo Controller Ready
+2024-12-04 03:33:09,004 [DEBUG] Received: Enter text to convert to Braille
+2024-12-04 03:33:09,004 [DEBUG] Received message: Enter text to convert to Braille
+2024-12-04 03:33:09,894 [DEBUG] Text command sent: TEXT:aliwaelalyelsayedbekheet
+2024-12-04 03:33:09,966 [DEBUG] Received: Processing: aliwaelalyelsayedbekheet
+2024-12-04 03:33:09,966 [DEBUG] Received message: Processing: aliwaelalyelsayedbekheet
+2024-12-04 03:33:10,072 [DEBUG] Received: Character: a -> Pattern: 100000 Servo A (100): 1613µs, Servo B (0): 844µs
+2024-12-04 03:33:10,072 [DEBUG] Received message: Character: a -> Pattern: 100000 Servo A (100): 1613µs, Servo B (0): 844µs
+2024-12-04 03:33:10,082 [DEBUG] Pattern updated: 100000
+2024-12-04 03:33:10,083 [DEBUG] Pulse width (bounded): 1613µs
+2024-12-04 03:33:10,083 [DEBUG] Converted 1613µs to 100.2°
+2024-12-04 03:33:10,083 [DEBUG] Pulse width (bounded): 844µs
+2024-12-04 03:33:10,083 [DEBUG] Converted 844µs to 31.0°
+2024-12-04 03:33:11,559 [DEBUG] Received: Character: l -> Pattern: 101010 Servo A (101): 1920µs, Servo B (10): 1268µs
+2024-12-04 03:33:11,560 [DEBUG] Received message: Character: l -> Pattern: 101010 Servo A (101): 1920µs, Servo B (10): 1268µs
+2024-12-04 03:33:11,561 [DEBUG] Pattern updated: 101010
+2024-12-04 03:33:11,561 [DEBUG] Pulse width (bounded): 1920µs
+2024-12-04 03:33:11,561 [DEBUG] Converted 1920µs to 127.8°
+2024-12-04 03:33:11,561 [DEBUG] Pulse width (bounded): 1268µs
+2024-12-04 03:33:11,561 [DEBUG] Converted 1268µs to 69.1°
+2024-12-04 03:33:13,071 [DEBUG] Received: Character: i -> Pattern: 11000 Servo A (11): 1324µs, Servo B (0): 844µs
+2024-12-04 03:33:13,071 [DEBUG] Received message: Character: i -> Pattern: 11000 Servo A (11): 1324µs, Servo B (0): 844µs
+2024-12-04 03:33:13,073 [DEBUG] Pulse width (bounded): 1324µs
+2024-12-04 03:33:13,073 [DEBUG] Converted 1324µs to 74.2°
+2024-12-04 03:33:13,073 [DEBUG] Pulse width (bounded): 844µs
+2024-12-04 03:33:13,073 [DEBUG] Converted 844µs to 31.0°
+2024-12-04 03:33:14,582 [DEBUG] Received: Character: w -> Pattern: 11101 Servo A (11): 1324µs, Servo B (101): 1920µs
+2024-12-04 03:33:14,583 [DEBUG] Received message: Character: w -> Pattern: 11101 Servo A (11): 1324µs, Servo B (101): 1920µs
+2024-12-04 03:33:14,587 [DEBUG] Pulse width (bounded): 1324µs
+2024-12-04 03:33:14,587 [DEBUG] Converted 1324µs to 74.2°
+2024-12-04 03:33:14,587 [DEBUG] Pulse width (bounded): 1920µs
+2024-12-04 03:33:14,587 [DEBUG] Converted 1920µs to 127.8°
+2024-12-04 03:33:16,093 [DEBUG] Received: Character: a -> Pattern: 100000 Servo A (100): 1613µs, Servo B (0): 844µs
+2024-12-04 03:33:16,094 [DEBUG] Received message: Character: a -> Pattern: 100000 Servo A (100): 1613µs, Servo B (0): 844µs
+2024-12-04 03:33:16,096 [DEBUG] Pattern updated: 100000
+2024-12-04 03:33:16,096 [DEBUG] Pulse width (bounded): 1613µs
+2024-12-04 03:33:16,096 [DEBUG] Converted 1613µs to 100.2°
+2024-12-04 03:33:16,096 [DEBUG] Pulse width (bounded): 844µs
+2024-12-04 03:33:16,096 [DEBUG] Converted 844µs to 31.0°
+2024-12-04 03:33:17,609 [DEBUG] Received: Character: e -> Pattern: 100100 Servo A (100): 1613µs, Servo B (100): 1613µs
+2024-12-04 03:33:17,609 [DEBUG] Received message: Character: e -> Pattern: 100100 Servo A (100): 1613µs, Servo B (100): 1613µs
+2024-12-04 03:33:17,610 [DEBUG] Pattern updated: 100100
+2024-12-04 03:33:17,610 [DEBUG] Pulse width (bounded): 1613µs
+2024-12-04 03:33:17,610 [DEBUG] Converted 1613µs to 100.2°
+2024-12-04 03:33:17,610 [DEBUG] Pulse width (bounded): 1613µs
+2024-12-04 03:33:17,610 [DEBUG] Converted 1613µs to 100.2°
+2024-12-04 03:33:19,124 [DEBUG] Received: Character: l -> Pattern: 101010 Servo A (101): 1920µs, Servo B (10): 1268µs
+2024-12-04 03:33:19,126 [DEBUG] Received message: Character: l -> Pattern: 101010 Servo A (101): 1920µs, Servo B (10): 1268µs
+2024-12-04 03:33:19,128 [DEBUG] Pattern updated: 101010
+2024-12-04 03:33:19,128 [DEBUG] Pulse width (bounded): 1920µs
+2024-12-04 03:33:19,128 [DEBUG] Converted 1920µs to 127.8°
+2024-12-04 03:33:19,128 [DEBUG] Pulse width (bounded): 1268µs
+2024-12-04 03:33:19,129 [DEBUG] Converted 1268µs to 69.1°
+2024-12-04 03:33:20,635 [DEBUG] Received: Character: a -> Pattern: 100000 Servo A (100): 1613µs, Servo B (0): 844µs
+2024-12-04 03:33:20,635 [DEBUG] Received message: Character: a -> Pattern: 100000 Servo A (100): 1613µs, Servo B (0): 844µs
+2024-12-04 03:33:20,636 [DEBUG] Pattern updated: 100000
+2024-12-04 03:33:20,637 [DEBUG] Pulse width (bounded): 1613µs
+2024-12-04 03:33:20,637 [DEBUG] Converted 1613µs to 100.2°
+2024-12-04 03:33:20,637 [DEBUG] Pulse width (bounded): 844µs
+2024-12-04 03:33:20,637 [DEBUG] Converted 844µs to 31.0°
+2024-12-04 03:33:22,151 [DEBUG] Received: Character: l -> Pattern: 101010 Servo A (101): 1920µs, Servo B (10): 1268µs
+2024-12-04 03:33:22,151 [DEBUG] Received message: Character: l -> Pattern: 101010 Servo A (101): 1920µs, Servo B (10): 1268µs
+2024-12-04 03:33:22,152 [DEBUG] Pattern updated: 101010
+2024-12-04 03:33:22,152 [DEBUG] Pulse width (bounded): 1920µs
+2024-12-04 03:33:22,152 [DEBUG] Converted 1920µs to 127.8°
+2024-12-04 03:33:22,152 [DEBUG] Pulse width (bounded): 1268µs
+2024-12-04 03:33:22,152 [DEBUG] Converted 1268µs to 69.1°
+2024-12-04 03:33:23,682 [DEBUG] Received: Character: y -> Pattern: 110111 Servo A (110): 2037µs, Servo B (111): 2094µs
+2024-12-04 03:33:23,683 [DEBUG] Received message: Character: y -> Pattern: 110111 Servo A (110): 2037µs, Servo B (111): 2094µs
+2024-12-04 03:33:23,687 [DEBUG] Pattern updated: 110111
+2024-12-04 03:33:23,688 [DEBUG] Pulse width (bounded): 2037µs
+2024-12-04 03:33:23,688 [DEBUG] Converted 2037µs to 138.3°
+2024-12-04 03:33:23,688 [DEBUG] Pulse width (bounded): 2094µs
+2024-12-04 03:33:23,688 [DEBUG] Converted 2094µs to 143.5°
+2024-12-04 03:33:25,177 [DEBUG] Received: Character: e -> Pattern: 100100 Servo A (100): 1613µs, Servo B (100): 1613µs
+2024-12-04 03:33:25,178 [DEBUG] Received message: Character: e -> Pattern: 100100 Servo A (100): 1613µs, Servo B (100): 1613µs
+2024-12-04 03:33:25,180 [DEBUG] Pattern updated: 100100
+2024-12-04 03:33:25,180 [DEBUG] Pulse width (bounded): 1613µs
+2024-12-04 03:33:25,180 [DEBUG] Converted 1613µs to 100.2°
+2024-12-04 03:33:25,180 [DEBUG] Pulse width (bounded): 1613µs
+2024-12-04 03:33:25,180 [DEBUG] Converted 1613µs to 100.2°
+2024-12-04 03:33:26,693 [DEBUG] Received: Character: l -> Pattern: 101010 Servo A (101): 1920µs, Servo B (10): 1268µs
+2024-12-04 03:33:26,694 [DEBUG] Received message: Character: l -> Pattern: 101010 Servo A (101): 1920µs, Servo B (10): 1268µs
+2024-12-04 03:33:26,698 [DEBUG] Pattern updated: 101010
+2024-12-04 03:33:26,698 [DEBUG] Pulse width (bounded): 1920µs
+2024-12-04 03:33:26,698 [DEBUG] Converted 1920µs to 127.8°
+2024-12-04 03:33:26,699 [DEBUG] Pulse width (bounded): 1268µs
+2024-12-04 03:33:26,699 [DEBUG] Converted 1268µs to 69.1°
+2024-12-04 03:33:28,204 [DEBUG] Received: Character: s -> Pattern: 11010 Servo A (11): 1324µs, Servo B (10): 1268µs
+2024-12-04 03:33:28,205 [DEBUG] Received message: Character: s -> Pattern: 11010 Servo A (11): 1324µs, Servo B (10): 1268µs
+2024-12-04 03:33:28,207 [DEBUG] Pulse width (bounded): 1324µs
+2024-12-04 03:33:28,207 [DEBUG] Converted 1324µs to 74.2°
+2024-12-04 03:33:28,207 [DEBUG] Pulse width (bounded): 1268µs
+2024-12-04 03:33:28,207 [DEBUG] Converted 1268µs to 69.1°
+2024-12-04 03:33:29,716 [DEBUG] Received: Character: a -> Pattern: 100000 Servo A (100): 1613µs, Servo B (0): 844µs
+2024-12-04 03:33:29,716 [DEBUG] Received message: Character: a -> Pattern: 100000 Servo A (100): 1613µs, Servo B (0): 844µs
+2024-12-04 03:33:29,718 [DEBUG] Pattern updated: 100000
+2024-12-04 03:33:29,718 [DEBUG] Pulse width (bounded): 1613µs
+2024-12-04 03:33:29,718 [DEBUG] Converted 1613µs to 100.2°
+2024-12-04 03:33:29,718 [DEBUG] Pulse width (bounded): 844µs
+2024-12-04 03:33:29,718 [DEBUG] Converted 844µs to 31.0°
+2024-12-04 03:33:31,231 [DEBUG] Received: Character: y -> Pattern: 110111 Servo A (110): 2037µs, Servo B (111): 2094µs
+2024-12-04 03:33:31,232 [DEBUG] Received message: Character: y -> Pattern: 110111 Servo A (110): 2037µs, Servo B (111): 2094µs
+2024-12-04 03:33:31,250 [DEBUG] Pattern updated: 110111
+2024-12-04 03:33:31,250 [DEBUG] Pulse width (bounded): 2037µs
+2024-12-04 03:33:31,250 [DEBUG] Converted 2037µs to 138.3°
+2024-12-04 03:33:31,250 [DEBUG] Pulse width (bounded): 2094µs
+2024-12-04 03:33:31,250 [DEBUG] Converted 2094µs to 143.5°
+2024-12-04 03:33:32,746 [DEBUG] Received: Character: e -> Pattern: 100100 Servo A (100): 1613µs, Servo B (100): 1613µs
+2024-12-04 03:33:32,747 [DEBUG] Received message: Character: e -> Pattern: 100100 Servo A (100): 1613µs, Servo B (100): 1613µs
+2024-12-04 03:33:32,755 [DEBUG] Pattern updated: 100100
+2024-12-04 03:33:32,755 [DEBUG] Pulse width (bounded): 1613µs
+2024-12-04 03:33:32,756 [DEBUG] Converted 1613µs to 100.2°
+2024-12-04 03:33:32,756 [DEBUG] Pulse width (bounded): 1613µs
+2024-12-04 03:33:32,756 [DEBUG] Converted 1613µs to 100.2°
+2024-12-04 03:33:34,262 [DEBUG] Received: Character: d -> Pattern: 110100 Servo A (110): 2037µs, Servo B (100): 1613µs
+2024-12-04 03:33:34,262 [DEBUG] Received message: Character: d -> Pattern: 110100 Servo A (110): 2037µs, Servo B (100): 1613µs
+2024-12-04 03:33:34,264 [DEBUG] Pattern updated: 110100
+2024-12-04 03:33:34,264 [DEBUG] Pulse width (bounded): 2037µs
+2024-12-04 03:33:34,264 [DEBUG] Converted 2037µs to 138.3°
+2024-12-04 03:33:34,264 [DEBUG] Pulse width (bounded): 1613µs
+2024-12-04 03:33:34,264 [DEBUG] Converted 1613µs to 100.2°
+2024-12-04 03:33:35,773 [DEBUG] Received: Character: b -> Pattern: 101000 Servo A (101): 1920µs, Servo B (0): 844µs
+2024-12-04 03:33:35,774 [DEBUG] Received message: Character: b -> Pattern: 101000 Servo A (101): 1920µs, Servo B (0): 844µs
+2024-12-04 03:33:35,777 [DEBUG] Pattern updated: 101000
+2024-12-04 03:33:35,777 [DEBUG] Pulse width (bounded): 1920µs
+2024-12-04 03:33:35,778 [DEBUG] Converted 1920µs to 127.8°
+2024-12-04 03:33:35,778 [DEBUG] Pulse width (bounded): 844µs
+2024-12-04 03:33:35,778 [DEBUG] Converted 844µs to 31.0°
+2024-12-04 03:33:37,285 [DEBUG] Received: Character: e -> Pattern: 100100 Servo A (100): 1613µs, Servo B (100): 1613µs
+2024-12-04 03:33:37,286 [DEBUG] Received message: Character: e -> Pattern: 100100 Servo A (100): 1613µs, Servo B (100): 1613µs
+2024-12-04 03:33:37,289 [DEBUG] Pattern updated: 100100
+2024-12-04 03:33:37,290 [DEBUG] Pulse width (bounded): 1613µs
+2024-12-04 03:33:37,290 [DEBUG] Converted 1613µs to 100.2°
+2024-12-04 03:33:37,290 [DEBUG] Pulse width (bounded): 1613µs
+2024-12-04 03:33:37,290 [DEBUG] Converted 1613µs to 100.2°
+2024-12-04 03:33:38,800 [DEBUG] Received: Character: k -> Pattern: 100010 Servo A (100): 1613µs, Servo B (10): 1268µs
+2024-12-04 03:33:38,801 [DEBUG] Received message: Character: k -> Pattern: 100010 Servo A (100): 1613µs, Servo B (10): 1268µs
+2024-12-04 03:33:38,804 [DEBUG] Pattern updated: 100010
+2024-12-04 03:33:38,804 [DEBUG] Pulse width (bounded): 1613µs
+2024-12-04 03:33:38,804 [DEBUG] Converted 1613µs to 100.2°
+2024-12-04 03:33:38,805 [DEBUG] Pulse width (bounded): 1268µs
+2024-12-04 03:33:38,805 [DEBUG] Converted 1268µs to 69.1°
+2024-12-04 03:33:40,315 [DEBUG] Received: Character: h -> Pattern: 101100 Servo A (101): 1920µs, Servo B (100): 1613µs
+2024-12-04 03:33:40,315 [DEBUG] Received message: Character: h -> Pattern: 101100 Servo A (101): 1920µs, Servo B (100): 1613µs
+2024-12-04 03:33:40,320 [DEBUG] Pattern updated: 101100
+2024-12-04 03:33:40,320 [DEBUG] Pulse width (bounded): 1920µs
+2024-12-04 03:33:40,321 [DEBUG] Converted 1920µs to 127.8°
+2024-12-04 03:33:40,321 [DEBUG] Pulse width (bounded): 1613µs
+2024-12-04 03:33:40,321 [DEBUG] Converted 1613µs to 100.2°
+2024-12-04 03:33:41,831 [DEBUG] Received: Character: e -> Pattern: 100100 Servo A (100): 1613µs, Servo B (100): 1613µs
+2024-12-04 03:33:41,831 [DEBUG] Received message: Character: e -> Pattern: 100100 Servo A (100): 1613µs, Servo B (100): 1613µs
+2024-12-04 03:33:41,834 [DEBUG] Pattern updated: 100100
+2024-12-04 03:33:41,834 [DEBUG] Pulse width (bounded): 1613µs
+2024-12-04 03:33:41,834 [DEBUG] Converted 1613µs to 100.2°
+2024-12-04 03:33:41,834 [DEBUG] Pulse width (bounded): 1613µs
+2024-12-04 03:33:41,834 [DEBUG] Converted 1613µs to 100.2°
+2024-12-04 03:33:43,346 [DEBUG] Received: Character: e -> Pattern: 100100 Servo A (100): 1613µs, Servo B (100): 1613µs
+2024-12-04 03:33:43,347 [DEBUG] Received message: Character: e -> Pattern: 100100 Servo A (100): 1613µs, Servo B (100): 1613µs
+2024-12-04 03:33:43,351 [DEBUG] Pattern updated: 100100
+2024-12-04 03:33:43,352 [DEBUG] Pulse width (bounded): 1613µs
+2024-12-04 03:33:43,352 [DEBUG] Converted 1613µs to 100.2°
+2024-12-04 03:33:43,352 [DEBUG] Pulse width (bounded): 1613µs
+2024-12-04 03:33:43,352 [DEBUG] Converted 1613µs to 100.2°
+2024-12-04 03:33:44,858 [DEBUG] Received: Character: t -> Pattern: 11110 Servo A (11): 1324µs, Servo B (110): 2037µs
+2024-12-04 03:33:44,858 [DEBUG] Received message: Character: t -> Pattern: 11110 Servo A (11): 1324µs, Servo B (110): 2037µs
+2024-12-04 03:33:44,861 [DEBUG] Pulse width (bounded): 1324µs
+2024-12-04 03:33:44,861 [DEBUG] Converted 1324µs to 74.2°
+2024-12-04 03:33:44,861 [DEBUG] Pulse width (bounded): 2037µs
+2024-12-04 03:33:44,861 [DEBUG] Converted 2037µs to 138.3°
+2024-12-04 03:37:45,097 [INFO] Serial connection closed
+2024-12-04 03:37:45,103 [INFO] Application shutdown complete

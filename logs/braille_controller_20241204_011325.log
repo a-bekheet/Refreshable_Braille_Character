@@ -1,0 +1,37 @@
+2024-12-04 01:13:25,131 [INFO] Logging initialized
+2024-12-04 01:13:25,132 [INFO] Starting Braille Controller Application
+2024-12-04 01:13:25,270 [DEBUG] Configuration loaded from file
+2024-12-04 01:13:25,270 [DEBUG] Configuration initialized
+2024-12-04 01:13:25,275 [DEBUG] Redrawing servo at angle: 0°
+2024-12-04 01:13:25,276 [DEBUG] Redrawing servo at angle: 0°
+2024-12-04 01:13:25,277 [INFO] Available serial ports: ['/dev/cu.debug-console', '/dev/cu.Bluetooth-Incoming-Port', '/dev/cu.AlisJBLPARTYBOXON-THE-GO']
+2024-12-04 01:13:25,277 [DEBUG] BrailleControllerGUI initialized
+2024-12-04 01:13:25,277 [INFO] GUI initialized successfully
+2024-12-04 01:13:25,277 [INFO] Application started - Log file: logs/braille_controller_20241204_011325.log
+2024-12-04 01:43:13,139 [INFO] Available serial ports: ['/dev/cu.debug-console', '/dev/cu.Bluetooth-Incoming-Port', '/dev/cu.AlisJBLPARTYBOXON-THE-GO', '/dev/cu.usbmodem21101']
+2024-12-04 01:43:17,210 [INFO] Connected to /dev/cu.usbmodem21101
+2024-12-04 01:43:17,215 [DEBUG] Received: Braille Servo Controller Ready
+2024-12-04 01:43:17,321 [DEBUG] Received: Enter text to convert to Braille
+2024-12-04 01:43:20,793 [DEBUG] Text command sent: TEXT:Test
+2024-12-04 01:43:20,869 [DEBUG] Received: Processing: Test
+2024-12-04 01:43:20,975 [DEBUG] Received: Character: t -> Pattern: 11110 Servo A (11): 1324µs, Servo B (110): 2037µs
+2024-12-04 01:43:22,428 [DEBUG] Received: Character: e -> Pattern: 100100 Servo A (100): 1613µs, Servo B (100): 1613µs
+2024-12-04 01:43:22,430 [DEBUG] Pattern updated: 100100
+2024-12-04 01:43:23,930 [DEBUG] Received: Character: s -> Pattern: 11010 Servo A (11): 1324µs, Servo B (10): 1268µs
+2024-12-04 01:43:25,446 [DEBUG] Received: Character: t -> Pattern: 11110 Servo A (11): 1324µs, Servo B (110): 2037µs
+2024-12-04 01:43:28,578 [DEBUG] Text command sent: TEXT:Test
+2024-12-04 01:43:28,680 [DEBUG] Received: Processing: Test
+2024-12-04 01:43:28,784 [DEBUG] Received: Character: t -> Pattern: 11110 Servo A (11): 1324µs, Servo B (110): 2037µs
+2024-12-04 01:43:30,205 [DEBUG] Received: Character: e -> Pattern: 100100 Servo A (100): 1613µs, Servo B (100): 1613µs
+2024-12-04 01:43:30,207 [DEBUG] Pattern updated: 100100
+2024-12-04 01:43:31,716 [DEBUG] Received: Character: s -> Pattern: 11010 Servo A (11): 1324µs, Servo B (10): 1268µs
+2024-12-04 01:43:33,232 [DEBUG] Received: Character: t -> Pattern: 11110 Servo A (11): 1324µs, Servo B (110): 2037µs
+2024-12-04 01:43:42,312 [DEBUG] Text command sent: TEXT:ASDF
+2024-12-04 01:43:42,385 [DEBUG] Received: Processing: ASDF
+2024-12-04 01:43:42,491 [DEBUG] Received: Character: a -> Pattern: 100000 Servo A (100): 1613µs, Servo B (0): 844µs
+2024-12-04 01:43:42,493 [DEBUG] Pattern updated: 100000
+2024-12-04 01:43:43,940 [DEBUG] Received: Character: s -> Pattern: 11010 Servo A (11): 1324µs, Servo B (10): 1268µs
+2024-12-04 01:43:45,449 [DEBUG] Received: Character: d -> Pattern: 110100 Servo A (110): 2037µs, Servo B (100): 1613µs
+2024-12-04 01:43:45,453 [DEBUG] Pattern updated: 110100
+2024-12-04 01:43:46,961 [DEBUG] Received: Character: f -> Pattern: 111000 Servo A (111): 2094µs, Servo B (0): 844µs
+2024-12-04 01:43:46,965 [DEBUG] Pattern updated: 111000

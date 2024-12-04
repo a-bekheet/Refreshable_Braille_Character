@@ -1,0 +1,11 @@
+2024-12-04 00:53:08,324 [INFO] Logging initialized
+2024-12-04 00:53:08,325 [INFO] Starting Braille Controller Application
+2024-12-04 00:53:08,466 [DEBUG] Configuration loaded from file
+2024-12-04 00:53:08,466 [DEBUG] Configuration initialized
+2024-12-04 00:53:08,472 [DEBUG] Redrawing servo at angle: 0°
+2024-12-04 00:53:08,474 [DEBUG] Redrawing servo at angle: 0°
+2024-12-04 00:53:08,475 [INFO] Available serial ports: ['/dev/cu.debug-console', '/dev/cu.Bluetooth-Incoming-Port', '/dev/cu.AlisJBLPARTYBOXON-THE-GO']
+2024-12-04 00:53:08,475 [DEBUG] BrailleControllerGUI initialized
+2024-12-04 00:53:08,475 [INFO] GUI initialized successfully
+2024-12-04 00:53:08,475 [INFO] Application started - Log file: logs/braille_controller_20241204_005308.log
+2024-12-04 00:55:10,824 [INFO] Application shutdown complete

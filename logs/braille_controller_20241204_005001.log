@@ -1,0 +1,18 @@
+2024-12-04 00:50:01,293 [INFO] Logging initialized
+2024-12-04 00:50:01,294 [INFO] Starting Braille Controller Application
+2024-12-04 00:50:01,466 [DEBUG] Configuration loaded from file
+2024-12-04 00:50:01,466 [DEBUG] Configuration initialized
+2024-12-04 00:50:01,469 [CRITICAL] Failed to start application: 'BrailleControllerGUI' object has no attribute '_upload_image'
+Traceback (most recent call last):
+  File "/Users/bekheet/dev/Refreshable_Braille_Character/src/braille_controller/main.py", line 81, in main
+    app = BrailleControllerGUI(root)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bekheet/dev/Refreshable_Braille_Character/src/braille_controller/gui/controller_gui.py", line 31, in __init__
+    self._setup_gui()
+  File "/Users/bekheet/dev/Refreshable_Braille_Character/src/braille_controller/gui/controller_gui.py", line 50, in _setup_gui
+    self._create_main_tab()
+  File "/Users/bekheet/dev/Refreshable_Braille_Character/src/braille_controller/gui/controller_gui.py", line 86, in _create_main_tab
+    self.upload_button = ttk.Button(input_frame, text="Upload Image", command=self._upload_image)
+                                                                              ^^^^^^^^^^^^^^^^^^
+AttributeError: 'BrailleControllerGUI' object has no attribute '_upload_image'
+2024-12-04 00:50:01,471 [INFO] Application shutdown complete

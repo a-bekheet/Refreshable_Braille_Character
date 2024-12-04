@@ -1,0 +1,7 @@
+pyserial>=3.5
+pillow>=9.0.0
+easyocr>=1.7.0
+torch>=1.13.0  # Required by easyocr
+numpy>=1.21.0
+opencv-python>=4.5.0
+typing-extensions>=4.0.0

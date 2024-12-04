@@ -1,0 +1,117 @@
+2024-12-04 04:16:23,582 [INFO] Logging initialized
+2024-12-04 04:16:23,582 [INFO] Starting Braille Controller Application
+2024-12-04 04:16:23,712 [DEBUG] Configuration loaded from file
+2024-12-04 04:16:23,713 [DEBUG] Configuration initialized
+2024-12-04 04:16:23,720 [INFO] Available serial ports: ['/dev/cu.debug-console', '/dev/cu.Bluetooth-Incoming-Port', '/dev/cu.AlisJBLPARTYBOXON-THE-GO', '/dev/cu.usbmodem21101']
+2024-12-04 04:16:23,720 [DEBUG] BrailleControllerGUI initialized
+2024-12-04 04:16:23,720 [INFO] GUI initialized successfully
+2024-12-04 04:16:23,720 [INFO] Application started - Log file: logs/braille_controller_20241204_041623.log
+2024-12-04 04:16:31,258 [INFO] Connected to /dev/cu.usbmodem21101
+2024-12-04 04:16:31,262 [DEBUG] Received: Braille Servo Controller Ready
+2024-12-04 04:16:31,262 [DEBUG] Received message: Braille Servo Controller Ready
+2024-12-04 04:16:31,367 [DEBUG] Received: Enter text to convert to Braille
+2024-12-04 04:16:31,368 [DEBUG] Received message: Enter text to convert to Braille
+2024-12-04 04:16:45,187 [DEBUG] Text command sent: TEXT:123
+2024-12-04 04:16:45,188 [DEBUG] Pattern updated: 000000
+2024-12-04 04:16:45,188 [DEBUG] Pattern updated: 000000
+2024-12-04 04:16:45,188 [DEBUG] Pattern updated: 000000
+2024-12-04 04:16:45,239 [DEBUG] Received: Processing: 123
+2024-12-04 04:16:45,240 [DEBUG] Received message: Processing: 123
+2024-12-04 04:16:45,345 [DEBUG] Received: Character: 1 -> Pattern: 100000 Servo A (100): 1613µs, Servo B (0): 844µs
+2024-12-04 04:16:45,345 [DEBUG] Received message: Character: 1 -> Pattern: 100000 Servo A (100): 1613µs, Servo B (0): 844µs
+2024-12-04 04:16:45,345 [DEBUG] Current group: 123, Current char: 1
+2024-12-04 04:16:45,345 [DEBUG] Found char 1 at position 0
+2024-12-04 04:16:45,346 [DEBUG] Updating display 0 with char 1 and pattern 100000
+2024-12-04 04:16:45,347 [DEBUG] Pattern updated: 100000
+2024-12-04 04:16:45,347 [DEBUG] Pulse width (bounded): 1613µs
+2024-12-04 04:16:45,347 [DEBUG] Converted 1613µs to 100.2°
+2024-12-04 04:16:45,347 [DEBUG] Pulse width (bounded): 844µs
+2024-12-04 04:16:45,347 [DEBUG] Converted 844µs to 31.0°
+2024-12-04 04:16:46,808 [DEBUG] Received: Character: 2 -> Pattern: 101000 Servo A (101): 1920µs, Servo B (0): 844µs
+2024-12-04 04:16:46,808 [DEBUG] Received message: Character: 2 -> Pattern: 101000 Servo A (101): 1920µs, Servo B (0): 844µs
+2024-12-04 04:16:46,809 [DEBUG] Current group: 123, Current char: 2
+2024-12-04 04:16:46,809 [DEBUG] Found char 2 at position 1
+2024-12-04 04:16:46,811 [DEBUG] Updating display 1 with char 2 and pattern 101000
+2024-12-04 04:16:46,826 [DEBUG] Pattern updated: 101000
+2024-12-04 04:16:46,826 [DEBUG] Pulse width (bounded): 1920µs
+2024-12-04 04:16:46,826 [DEBUG] Converted 1920µs to 127.8°
+2024-12-04 04:16:46,826 [DEBUG] Pulse width (bounded): 844µs
+2024-12-04 04:16:46,826 [DEBUG] Converted 844µs to 31.0°
+2024-12-04 04:16:48,319 [DEBUG] Received: Character: 3 -> Pattern: 110000 Servo A (110): 2037µs, Servo B (0): 844µs
+2024-12-04 04:16:48,319 [DEBUG] Received message: Character: 3 -> Pattern: 110000 Servo A (110): 2037µs, Servo B (0): 844µs
+2024-12-04 04:16:48,319 [DEBUG] Current group: 123, Current char: 3
+2024-12-04 04:16:48,319 [DEBUG] Found char 3 at position 2
+2024-12-04 04:16:48,319 [DEBUG] Updating display 2 with char 3 and pattern 110000
+2024-12-04 04:16:48,325 [DEBUG] Pattern updated: 110000
+2024-12-04 04:16:48,325 [DEBUG] Pulse width (bounded): 2037µs
+2024-12-04 04:16:48,326 [DEBUG] Converted 2037µs to 138.3°
+2024-12-04 04:16:48,326 [DEBUG] Pulse width (bounded): 844µs
+2024-12-04 04:16:48,326 [DEBUG] Converted 844µs to 31.0°
+2024-12-04 04:16:51,334 [DEBUG] Text command sent: TEXT:456
+2024-12-04 04:16:51,450 [DEBUG] Received: Processing: 456
+2024-12-04 04:16:51,451 [DEBUG] Received message: Processing: 456
+2024-12-04 04:16:51,558 [DEBUG] Received: Character: 4 -> Pattern: 110100 Servo A (110): 2037µs, Servo B (100): 1613µs
+2024-12-04 04:16:51,559 [DEBUG] Received message: Character: 4 -> Pattern: 110100 Servo A (110): 2037µs, Servo B (100): 1613µs
+2024-12-04 04:16:51,559 [DEBUG] Current group: 456, Current char: 4
+2024-12-04 04:16:51,559 [DEBUG] Found char 4 at position 0
+2024-12-04 04:16:51,562 [DEBUG] Updating display 0 with char 4 and pattern 110100
+2024-12-04 04:16:51,577 [DEBUG] Pattern updated: 110100
+2024-12-04 04:16:51,578 [DEBUG] Pulse width (bounded): 2037µs
+2024-12-04 04:16:51,578 [DEBUG] Converted 2037µs to 138.3°
+2024-12-04 04:16:51,578 [DEBUG] Pulse width (bounded): 1613µs
+2024-12-04 04:16:51,578 [DEBUG] Converted 1613µs to 100.2°
+2024-12-04 04:16:52,959 [DEBUG] Received: Character: 5 -> Pattern: 100100 Servo A (100): 1613µs, Servo B (100): 1613µs
+2024-12-04 04:16:52,960 [DEBUG] Received message: Character: 5 -> Pattern: 100100 Servo A (100): 1613µs, Servo B (100): 1613µs
+2024-12-04 04:16:52,960 [DEBUG] Current group: 456, Current char: 5
+2024-12-04 04:16:52,960 [DEBUG] Found char 5 at position 1
+2024-12-04 04:16:52,961 [DEBUG] Updating display 1 with char 5 and pattern 100100
+2024-12-04 04:16:52,976 [DEBUG] Pattern updated: 100100
+2024-12-04 04:16:52,976 [DEBUG] Pulse width (bounded): 1613µs
+2024-12-04 04:16:52,976 [DEBUG] Converted 1613µs to 100.2°
+2024-12-04 04:16:52,976 [DEBUG] Pulse width (bounded): 1613µs
+2024-12-04 04:16:52,976 [DEBUG] Converted 1613µs to 100.2°
+2024-12-04 04:16:54,475 [DEBUG] Received: Character: 6 -> Pattern: 111000 Servo A (111): 2094µs, Servo B (0): 844µs
+2024-12-04 04:16:54,475 [DEBUG] Received message: Character: 6 -> Pattern: 111000 Servo A (111): 2094µs, Servo B (0): 844µs
+2024-12-04 04:16:54,475 [DEBUG] Current group: 456, Current char: 6
+2024-12-04 04:16:54,476 [DEBUG] Found char 6 at position 2
+2024-12-04 04:16:54,477 [DEBUG] Updating display 2 with char 6 and pattern 111000
+2024-12-04 04:16:54,493 [DEBUG] Pattern updated: 111000
+2024-12-04 04:16:54,493 [DEBUG] Pulse width (bounded): 2094µs
+2024-12-04 04:16:54,493 [DEBUG] Converted 2094µs to 143.5°
+2024-12-04 04:16:54,493 [DEBUG] Pulse width (bounded): 844µs
+2024-12-04 04:16:54,493 [DEBUG] Converted 844µs to 31.0°
+2024-12-04 04:16:57,511 [DEBUG] Text command sent: TEXT:789
+2024-12-04 04:16:57,542 [DEBUG] Received: Processing: 789
+2024-12-04 04:16:57,542 [DEBUG] Received message: Processing: 789
+2024-12-04 04:16:57,652 [DEBUG] Received: Character: 7 -> Pattern: 111100 Servo A (111): 2094µs, Servo B (100): 1613µs
+2024-12-04 04:16:57,652 [DEBUG] Received message: Character: 7 -> Pattern: 111100 Servo A (111): 2094µs, Servo B (100): 1613µs
+2024-12-04 04:16:57,652 [DEBUG] Current group: 789, Current char: 7
+2024-12-04 04:16:57,652 [DEBUG] Found char 7 at position 0
+2024-12-04 04:16:57,653 [DEBUG] Updating display 0 with char 7 and pattern 111100
+2024-12-04 04:16:57,662 [DEBUG] Pattern updated: 111100
+2024-12-04 04:16:57,662 [DEBUG] Pulse width (bounded): 2094µs
+2024-12-04 04:16:57,662 [DEBUG] Converted 2094µs to 143.5°
+2024-12-04 04:16:57,662 [DEBUG] Pulse width (bounded): 1613µs
+2024-12-04 04:16:57,662 [DEBUG] Converted 1613µs to 100.2°
+2024-12-04 04:16:59,145 [DEBUG] Received: Character: 8 -> Pattern: 101100 Servo A (101): 1920µs, Servo B (100): 1613µs
+2024-12-04 04:16:59,146 [DEBUG] Received message: Character: 8 -> Pattern: 101100 Servo A (101): 1920µs, Servo B (100): 1613µs
+2024-12-04 04:16:59,146 [DEBUG] Current group: 789, Current char: 8
+2024-12-04 04:16:59,146 [DEBUG] Found char 8 at position 1
+2024-12-04 04:16:59,147 [DEBUG] Updating display 1 with char 8 and pattern 101100
+2024-12-04 04:16:59,161 [DEBUG] Pattern updated: 101100
+2024-12-04 04:16:59,171 [DEBUG] Pulse width (bounded): 1920µs
+2024-12-04 04:16:59,171 [DEBUG] Converted 1920µs to 127.8°
+2024-12-04 04:16:59,172 [DEBUG] Pulse width (bounded): 1613µs
+2024-12-04 04:16:59,172 [DEBUG] Converted 1613µs to 100.2°
+2024-12-04 04:17:00,647 [DEBUG] Received: Character: 9 -> Pattern: 11000 Servo A (11): 1324µs, Servo B (0): 844µs
+2024-12-04 04:17:00,648 [DEBUG] Received message: Character: 9 -> Pattern: 11000 Servo A (11): 1324µs, Servo B (0): 844µs
+2024-12-04 04:17:00,648 [DEBUG] Current group: 789, Current char: 9
+2024-12-04 04:17:00,648 [DEBUG] Found char 9 at position 2
+2024-12-04 04:17:00,649 [DEBUG] Updating display 2 with char 9 and pattern 011000
+2024-12-04 04:17:00,664 [DEBUG] Pattern updated: 011000
+2024-12-04 04:17:00,665 [DEBUG] Pulse width (bounded): 1324µs
+2024-12-04 04:17:00,665 [DEBUG] Converted 1324µs to 74.2°
+2024-12-04 04:17:00,665 [DEBUG] Pulse width (bounded): 844µs
+2024-12-04 04:17:00,665 [DEBUG] Converted 844µs to 31.0°
+2024-12-04 04:23:39,696 [INFO] Serial connection closed
+2024-12-04 04:23:39,713 [INFO] Application shutdown complete

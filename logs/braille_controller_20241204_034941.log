@@ -1,0 +1,102 @@
+2024-12-04 03:49:41,314 [INFO] Logging initialized
+2024-12-04 03:49:41,314 [INFO] Starting Braille Controller Application
+2024-12-04 03:49:41,452 [DEBUG] Configuration loaded from file
+2024-12-04 03:49:41,452 [DEBUG] Configuration initialized
+2024-12-04 03:49:41,460 [INFO] Available serial ports: ['/dev/cu.debug-console', '/dev/cu.Bluetooth-Incoming-Port', '/dev/cu.AlisJBLPARTYBOXON-THE-GO', '/dev/cu.usbmodem21101']
+2024-12-04 03:49:41,460 [DEBUG] BrailleControllerGUI initialized
+2024-12-04 03:49:41,460 [INFO] GUI initialized successfully
+2024-12-04 03:49:41,460 [INFO] Application started - Log file: logs/braille_controller_20241204_034941.log
+2024-12-04 03:49:51,109 [DEBUG] Configuration saved to file
+2024-12-04 03:49:51,109 [DEBUG] Configuration updated: char_delay = 3000
+2024-12-04 03:49:51,110 [DEBUG] Configuration saved to file
+2024-12-04 03:49:51,110 [DEBUG] Configuration updated: servo_delay = 750
+2024-12-04 03:49:51,110 [DEBUG] Configuration saved to file
+2024-12-04 03:49:51,110 [DEBUG] Configuration updated: dual_servo_mode = True
+2024-12-04 03:49:51,110 [DEBUG] Configuration saved to file
+2024-12-04 03:49:51,111 [DEBUG] Configuration updated: debug_mode = False
+2024-12-04 03:49:57,320 [ERROR] Send error: Not connected to device
+2024-12-04 03:50:02,670 [INFO] Connected to /dev/cu.usbmodem21101
+2024-12-04 03:50:02,672 [DEBUG] Received: Braille Servo Controller Ready
+2024-12-04 03:50:02,675 [DEBUG] Received message: Braille Servo Controller Ready
+2024-12-04 03:50:02,780 [DEBUG] Received: Enter text to convert to Braille
+2024-12-04 03:50:02,781 [DEBUG] Received message: Enter text to convert to Braille
+2024-12-04 03:50:05,324 [DEBUG] Text command sent: TEXT:123
+2024-12-04 03:50:05,325 [ERROR] Send error: 'BrailleCharacterDisplay' object has no attribute 'update_letter'
+2024-12-04 03:50:05,376 [DEBUG] Received: Processing: 123
+2024-12-04 03:50:05,376 [DEBUG] Received message: Processing: 123
+2024-12-04 03:50:05,482 [DEBUG] Received: Character: 1 -> Pattern: 100000 Servo A (100): 1613µs, Servo B (0): 844µs
+2024-12-04 03:50:05,482 [DEBUG] Received message: Character: 1 -> Pattern: 100000 Servo A (100): 1613µs, Servo B (0): 844µs
+2024-12-04 03:50:05,482 [DEBUG] Pulse width (bounded): 1613µs
+2024-12-04 03:50:05,482 [DEBUG] Converted 1613µs to 100.2°
+2024-12-04 03:50:05,482 [DEBUG] Pulse width (bounded): 844µs
+2024-12-04 03:50:05,482 [DEBUG] Converted 844µs to 31.0°
+2024-12-04 03:50:05,483 [ERROR] Message processing error: 'BrailleCharacterDisplay' object has no attribute 'update_pattern'
+Traceback (most recent call last):
+  File "/Users/bekheet/dev/Refreshable_Braille_Character/src/braille_controller/gui/controller_gui.py", line 346, in process_serial_message
+    self.char_displays[char_position].update_pattern(update_data)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'BrailleCharacterDisplay' object has no attribute 'update_pattern'
+2024-12-04 03:50:06,946 [DEBUG] Received: Character: 2 -> Pattern: 101000 Servo A (101): 1920µs, Servo B (0): 844µs
+2024-12-04 03:50:06,946 [DEBUG] Received message: Character: 2 -> Pattern: 101000 Servo A (101): 1920µs, Servo B (0): 844µs
+2024-12-04 03:50:06,947 [DEBUG] Pulse width (bounded): 1920µs
+2024-12-04 03:50:06,947 [DEBUG] Converted 1920µs to 127.8°
+2024-12-04 03:50:06,947 [DEBUG] Pulse width (bounded): 844µs
+2024-12-04 03:50:06,947 [DEBUG] Converted 844µs to 31.0°
+2024-12-04 03:50:06,948 [ERROR] Message processing error: 'BrailleCharacterDisplay' object has no attribute 'update_pattern'
+Traceback (most recent call last):
+  File "/Users/bekheet/dev/Refreshable_Braille_Character/src/braille_controller/gui/controller_gui.py", line 346, in process_serial_message
+    self.char_displays[char_position].update_pattern(update_data)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'BrailleCharacterDisplay' object has no attribute 'update_pattern'
+2024-12-04 03:50:08,456 [DEBUG] Received: Character: 3 -> Pattern: 110000 Servo A (110): 2037µs, Servo B (0): 844µs
+2024-12-04 03:50:08,459 [DEBUG] Received message: Character: 3 -> Pattern: 110000 Servo A (110): 2037µs, Servo B (0): 844µs
+2024-12-04 03:50:08,460 [DEBUG] Pulse width (bounded): 2037µs
+2024-12-04 03:50:08,460 [DEBUG] Converted 2037µs to 138.3°
+2024-12-04 03:50:08,460 [DEBUG] Pulse width (bounded): 844µs
+2024-12-04 03:50:08,460 [DEBUG] Converted 844µs to 31.0°
+2024-12-04 03:50:08,460 [ERROR] Message processing error: 'BrailleCharacterDisplay' object has no attribute 'update_pattern'
+Traceback (most recent call last):
+  File "/Users/bekheet/dev/Refreshable_Braille_Character/src/braille_controller/gui/controller_gui.py", line 346, in process_serial_message
+    self.char_displays[char_position].update_pattern(update_data)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'BrailleCharacterDisplay' object has no attribute 'update_pattern'
+2024-12-04 03:50:09,209 [DEBUG] Text command sent: TEXT:123
+2024-12-04 03:50:09,210 [ERROR] Send error: 'BrailleCharacterDisplay' object has no attribute 'update_letter'
+2024-12-04 03:50:09,922 [DEBUG] Received: Processing: 123
+2024-12-04 03:50:09,922 [DEBUG] Received message: Processing: 123
+2024-12-04 03:50:10,028 [DEBUG] Received: Character: 1 -> Pattern: 100000 Servo A (100): 1613µs, Servo B (0): 844µs
+2024-12-04 03:50:10,028 [DEBUG] Received message: Character: 1 -> Pattern: 100000 Servo A (100): 1613µs, Servo B (0): 844µs
+2024-12-04 03:50:10,029 [DEBUG] Pulse width (bounded): 1613µs
+2024-12-04 03:50:10,029 [DEBUG] Converted 1613µs to 100.2°
+2024-12-04 03:50:10,029 [DEBUG] Pulse width (bounded): 844µs
+2024-12-04 03:50:10,029 [DEBUG] Converted 844µs to 31.0°
+2024-12-04 03:50:10,029 [ERROR] Message processing error: 'BrailleCharacterDisplay' object has no attribute 'update_pattern'
+Traceback (most recent call last):
+  File "/Users/bekheet/dev/Refreshable_Braille_Character/src/braille_controller/gui/controller_gui.py", line 346, in process_serial_message
+    self.char_displays[char_position].update_pattern(update_data)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'BrailleCharacterDisplay' object has no attribute 'update_pattern'
+2024-12-04 03:50:11,498 [DEBUG] Received: Character: 2 -> Pattern: 101000 Servo A (101): 1920µs, Servo B (0): 844µs
+2024-12-04 03:50:11,498 [DEBUG] Received message: Character: 2 -> Pattern: 101000 Servo A (101): 1920µs, Servo B (0): 844µs
+2024-12-04 03:50:11,499 [DEBUG] Pulse width (bounded): 1920µs
+2024-12-04 03:50:11,499 [DEBUG] Converted 1920µs to 127.8°
+2024-12-04 03:50:11,499 [DEBUG] Pulse width (bounded): 844µs
+2024-12-04 03:50:11,499 [DEBUG] Converted 844µs to 31.0°
+2024-12-04 03:50:11,499 [ERROR] Message processing error: 'BrailleCharacterDisplay' object has no attribute 'update_pattern'
+Traceback (most recent call last):
+  File "/Users/bekheet/dev/Refreshable_Braille_Character/src/braille_controller/gui/controller_gui.py", line 346, in process_serial_message
+    self.char_displays[char_position].update_pattern(update_data)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'BrailleCharacterDisplay' object has no attribute 'update_pattern'
+2024-12-04 03:50:13,013 [DEBUG] Received: Character: 3 -> Pattern: 110000 Servo A (110): 2037µs, Servo B (0): 844µs
+2024-12-04 03:50:13,013 [DEBUG] Received message: Character: 3 -> Pattern: 110000 Servo A (110): 2037µs, Servo B (0): 844µs
+2024-12-04 03:50:13,013 [DEBUG] Pulse width (bounded): 2037µs
+2024-12-04 03:50:13,013 [DEBUG] Converted 2037µs to 138.3°
+2024-12-04 03:50:13,013 [DEBUG] Pulse width (bounded): 844µs
+2024-12-04 03:50:13,013 [DEBUG] Converted 844µs to 31.0°
+2024-12-04 03:50:13,013 [ERROR] Message processing error: 'BrailleCharacterDisplay' object has no attribute 'update_pattern'
+Traceback (most recent call last):
+  File "/Users/bekheet/dev/Refreshable_Braille_Character/src/braille_controller/gui/controller_gui.py", line 346, in process_serial_message
+    self.char_displays[char_position].update_pattern(update_data)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'BrailleCharacterDisplay' object has no attribute 'update_pattern'
