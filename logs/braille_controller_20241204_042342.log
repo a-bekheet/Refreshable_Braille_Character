@@ -1,9 +1,0 @@
-2024-12-04 04:23:42,277 [INFO] Logging initialized
-2024-12-04 04:23:42,277 [INFO] Starting Braille Controller Application
-2024-12-04 04:23:42,419 [DEBUG] Configuration loaded from file
-2024-12-04 04:23:42,419 [DEBUG] Configuration initialized
-2024-12-04 04:23:42,426 [INFO] Available serial ports: ['/dev/cu.debug-console', '/dev/cu.Bluetooth-Incoming-Port', '/dev/cu.AlisJBLPARTYBOXON-THE-GO', '/dev/cu.usbmodem21101']
-2024-12-04 04:23:42,426 [DEBUG] BrailleControllerGUI initialized
-2024-12-04 04:23:42,426 [INFO] GUI initialized successfully
-2024-12-04 04:23:42,427 [INFO] Application started - Log file: logs/braille_controller_20241204_042342.log
-2024-12-04 04:23:45,080 [INFO] Application shutdown complete
