@@ -43,8 +43,9 @@ def extract_text_from_image(image_path: str, confidence_threshold: float = 0.5) 
 
         if extracted_text:
             final_text = ' '.join(extracted_text)
-            logging.info(f"Successfully extracted text: {final_text}")
-            return final_text
+            final_text_ascii = final_text.encode('ascii', 'ignore').decode('ascii')
+            logging.info(f"Successfully extracted text: {final_text_ascii}")
+            return final_text_ascii
         else:
             logging.warning("No text found with sufficient confidence")
             return "No text found with sufficient confidence."

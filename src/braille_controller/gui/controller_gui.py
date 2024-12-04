@@ -254,28 +254,32 @@ class BrailleControllerGUI:
             servo_delay = int(self.servo_delay_var.get())
             num_active_chars = self.char_count_var.get()
 
+            # Convert input text to lowercase before processing
+            text = text.lower()
+            
             # Store the text and setup initial state
             self.current_text = text
             self.current_position = 0
 
-            if num_active_chars == 1:
-                # For single character mode, send one character
-                if self.current_position < len(text):
-                    self.serial_manager.send_text(text[0], char_delay, servo_delay)
-                    self.progress['value'] = 0
-                    self.char_display.configure(text=f"Current Character: {text[0]}")
+            # For single characters or short text, don't split into groups
+            if len(text) <= num_active_chars:
+                self.current_text_groups = [text]
             else:
-                # For multi-character mode, split text into groups
-                text_groups = [text[i:i+num_active_chars] for i in range(0, len(text), num_active_chars)]
-                self.current_text_groups = text_groups
-                self.current_group_index = 0
-                
-                # Send first group as a single string
-                if text_groups:
-                    first_group = text_groups[0]
-                    self.serial_manager.send_text(first_group, char_delay, servo_delay)
-                    self.progress['value'] = 0
-                    self.char_display.configure(text=f"Current Characters: {', '.join(first_group)}")
+                # Split text into groups based on number of active characters
+                self.current_text_groups = [
+                    text[i:i+num_active_chars] 
+                    for i in range(0, len(text), num_active_chars)
+                ]
+            
+            self.current_group_index = 0
+            self.processed_positions = set()  # Reset processed positions
+            
+            # Send first group/character
+            if self.current_text_groups:
+                first_group = self.current_text_groups[0]
+                self.serial_manager.send_text(first_group, char_delay, servo_delay)
+                self.progress['value'] = 0
+                self.char_display.configure(text=f"Current Character{'s' if len(first_group) > 1 else ''}: {', '.join(first_group)}")
 
             # Reset all character displays
             for display in self.char_displays:
@@ -312,65 +316,87 @@ class BrailleControllerGUI:
             if "Character:" in message:
                 parts = message.split("->")
                 if len(parts) == 2:
-                    char = parts[0].split(":")[1].strip()
+                    # Parse character and pattern
+                    received_char = parts[0].split(":")[1].strip()
+                    char = received_char.lower()
                     pattern_info = parts[1].strip()
-                    
+
+                    # Ensure text groups exist
                     if hasattr(self, 'current_text_groups') and self.current_text_groups:
                         current_group = self.current_text_groups[self.current_group_index]
-                        logging.debug(f"Current group: {current_group}, Current char: {char}")
-                        
-                        try:
-                            char_position = current_group.index(char)
-                            logging.debug(f"Found char {char} at position {char_position}")
-                            
-                            # Direct update to the display
-                            display = self.char_displays[char_position]
-                            display.letter_display.configure(text=char)
-                            display.current_letter = char
-                            
-                            if "Pattern:" in pattern_info:
-                                # Updated regex to match any length of bits
-                                binary_match = re.search(r'Pattern:\s*([01]+)', pattern_info)
-                                if binary_match:
-                                    pattern = binary_match.group(1).zfill(6)  # Pad to 6 bits
-                                    logging.debug(f"Updating display {char_position} with char {char} and pattern {pattern}")
-                                    # Force braille pattern update
-                                    display.pattern_canvas.update_pattern(pattern)
-                                    display.pattern_canvas.update_idletasks()
-                                else:
-                                    logging.warning(f"No pattern found for character {char}")
-                                    
-                                servo_matches = re.findall(r'Servo ([AB]) \((?:\d+)\): (\d+)µs', pattern_info)
-                                if servo_matches:
-                                    pulses = {}
-                                    for servo, pulse in servo_matches:
-                                        pulses[servo] = int(pulse)
-                                    
-                                    if 'A' in pulses and 'B' in pulses:
-                                        angle_a = self._pulse_to_angle(pulses['A'])
-                                        angle_b = self._pulse_to_angle(pulses['B'])
-                                        display.servo_canvas.set_angle(angle_a, angle_b)
-                            
-                            # Force update of the display components
-                            display.letter_display.update_idletasks()
-                            
-                            # If this was the last character in the group
-                            if char_position == len(current_group) - 1:
-                                self.current_group_index += 1
-                                if self.current_group_index < len(self.current_text_groups):
-                                    next_group = self.current_text_groups[self.current_group_index]
-                                    char_delay = int(self.char_delay_var.get())
-                                    servo_delay = int(self.servo_delay_var.get())
-                                    
-                                    self.char_display.configure(text=f"Current Characters: {', '.join(next_group)}")
-                                    self.root.after(char_delay, lambda: self.serial_manager.send_text(
-                                        next_group, char_delay, servo_delay))
-                                
-                        except ValueError:
-                            logging.error(f"Character {char} not found in current group {current_group}")
-                        
+                        logging.debug(f"Processing group '{current_group}', character '{char}'")
+
+                        # Track processed positions for repeated characters
+                        if not hasattr(self, 'processed_positions'):
+                            self.processed_positions = set()
+
+                        # Handle spaces explicitly
+                        if char == '':
+                            char = ' '
+                            pattern_info = "Pattern: 000000"
+
+                        # Find the next unprocessed position for this character
+                        for idx, group_char in enumerate(current_group):
+                            if group_char == char and idx not in self.processed_positions:
+                                char_position = idx
+                                self.processed_positions.add(idx)
+                                break
+                        else:
+                            logging.error(f"Character '{char}' already processed or not found in group '{current_group}'")
+                            return
+
+                        # Handle pattern updates
+                        if "Pattern:" in pattern_info:
+                            binary_match = re.search(r'Pattern:\s*([01]{1,6})', pattern_info)
+                            if binary_match:
+                                raw_pattern = binary_match.group(1)
+                                pattern = raw_pattern.zfill(6)  # Pad to 6 bits
+                                logging.debug(f"Updating display {char_position} with pattern {pattern}")
+                                self.char_displays[char_position].pattern_canvas.update_pattern(pattern)
+                                self.char_displays[char_position].update_letter(received_char if char != ' ' else '-')
+                            else:
+                                logging.warning(f"No valid pattern found in message: {message}")
+                                self.char_displays[char_position].pattern_canvas.update_pattern("000000")
+                                self.char_displays[char_position].update_letter("-")
+
+                        # Update servo angles
+                        servo_matches = re.findall(r'Servo ([AB]) \((?:\d+)\): (\d+)µs', pattern_info)
+                        if servo_matches:
+                            pulses = {servo: int(pulse) for servo, pulse in servo_matches}
+                            angle_a = self._pulse_to_angle(pulses.get('A', 0))
+                            angle_b = self._pulse_to_angle(pulses.get('B', 0))
+                            logging.debug(f"Setting servo angles A: {angle_a}°, B: {angle_b}°")
+                            self.char_displays[char_position].update_servos(angle_a, angle_b)
+
+                        # Check if group is complete
+                        processed_count = len(self.processed_positions)
+                        if processed_count == len(current_group):
+                            logging.debug(f"Group '{current_group}' complete with {processed_count} characters processed.")
+                            self.current_group_index += 1
+                            self._move_to_next_group()
+
         except Exception as e:
             logging.error(f"Message processing error: {e}", exc_info=True)
+
+    def _move_to_next_group(self):
+        """Move to the next group and reset displays."""
+        if self.current_group_index < len(self.current_text_groups):
+            # Reset processed positions for the new group
+            self.processed_positions = set()
+
+            next_group = self.current_text_groups[self.current_group_index]
+            char_delay = int(self.char_delay_var.get())
+            servo_delay = int(self.servo_delay_var.get())
+
+            logging.debug(f"Sending next group: '{next_group}'")
+            self.char_display.configure(text=f"Current Characters: {', '.join(next_group)}")
+
+            # Schedule next group send
+            self.root.after(char_delay, lambda: self.serial_manager.send_text(
+                next_group, char_delay, servo_delay))
+        else:
+            logging.debug("All groups processed")
+
 
     def _pulse_to_angle(self, pulse_width: int) -> float:
         """Convert servo pulse width to angle using observed pulse range."""
@@ -397,6 +423,7 @@ class BrailleControllerGUI:
         self.root.destroy()
 
     def _upload_image(self):
+
         """Handle image upload and OCR processing."""
         try:
             # Import easyocr here to avoid startup delay
